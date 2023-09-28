@@ -1,17 +1,21 @@
 import fs from 'fs';
 
-/************************************************* */
-
-const trainingData = './training_data/training_data.jsonl'
+// Sets the origin data file for generating formatted JSONL file.
 const dialoguesFile = './dialogues_json/dialogues.json'
 
+// Sets the path where JSONL file will be created.
+const trainingData = './training_data/training_data.jsonl'
+
+// Sets the system content instruction.
+const systemContent = 'Eres un vendedor carismático, experto en cierres de ventas';
+
 /************************************************* */
 
-// Elimimates stresses and special characters from spanish.
+// Filters stresses and special characters from spanish.
 function normalizer(text) {
     return text
         .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[\u0300-\u036f]/g, '');
 }
 
 // Reads the JSON file and generates a JSONL file storing formatted examples.
@@ -20,30 +24,24 @@ function normalizer(text) {
 // https://platform.openai.com/docs/guides/fine-tuning/example-format
 function datasetGenerator() {
 
-    const dataObj = JSON.parse(fs.readFileSync(dialoguesFile, 'utf8'));
+    const dataSet = JSON.parse(fs.readFileSync(dialoguesFile, 'utf8'));
     const stream = fs.createWriteStream(trainingData);
     console.log('Generating JSONL formatted file for fine-tunning your model\n');
 
-    for (let i = 0; i < dataObj.length; i++) {
+    for (let i = 0; i < dataSet.length; i++) {
         let q, a = {};
-        if (dataObj[i].role === 'user') {
-            q = normalizer(dataObj[i].content);
-            a = normalizer(dataObj[i + 1].content);
-            const formattedDialog = `{"messages": [{"role": "system", "content": "Eres un vendedor carismatico, experto en cierres de ventas"}, {"role": "user", "content": ${JSON.stringify(q)}}, {"role": "assistant", "content": ${JSON.stringify(a)}}]}`;
-            stream.write(formattedDialog + '\n');
+        if (dataSet[i].role === 'user') {
+            q = JSON.stringify(dataSet[i].content);
+            a = JSON.stringify(dataSet[i + 1].content);
+            const formattedDataset = `{"messages": [{"role": "system", "content": "${systemContent}"}, {"role": "user", "content": ${q}}, {"role": "assistant", "content": ${a}}]}`;
+            stream.write(normalizer(formattedDataset) + '\n');
         };
     };
     stream.end();
     console.log(`Formatted JSONL file ready at ${trainingData} `);
 }
 
-/************************************************* */
-
-async function main() {
-    datasetGenerator();
-}
-
-main();
+datasetGenerator();
 
 
 
