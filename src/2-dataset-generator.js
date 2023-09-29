@@ -26,7 +26,7 @@ function datasetGenerator() {
 
     const dataSet = JSON.parse(fs.readFileSync(dialoguesFile, 'utf8'));
     const stream = fs.createWriteStream(trainingData);
-    console.log('Generating JSONL formatted file for fine-tunning your model\n');
+    console.log('[*] Generating JSONL formatted file for fine-tunning your model\n');
 
     for (let i = 0; i < dataSet.length; i++) {
         let q, a = {};
@@ -35,13 +35,24 @@ function datasetGenerator() {
             a = JSON.stringify(dataSet[i + 1].content);
             const formattedDataset = `{"messages": [{"role": "system", "content": "${systemContent}"}, {"role": "user", "content": ${q}}, {"role": "assistant", "content": ${a}}]}`;
             stream.write(normalizer(formattedDataset) + '\n');
-        };
-    };
+        }
+    }
     stream.end();
-    console.log(`Formatted JSONL file ready at ${trainingData} `);
+    console.log(`[*] Formatted JSONL file ready at ${trainingData} `);
 }
 
-datasetGenerator();
+
+function main() {
+    // If dilaogues file does not exists then will be required.
+    try {
+        if (fs.accessSync(dialoguesFile)) {
+            datasetGenerator();
+        }
+    } catch (e) {
+        console.log(`[*] Please privide a JSON file with some examples of training data ${dialoguesFile}`);
+    }    
+}
+main();
 
 
 

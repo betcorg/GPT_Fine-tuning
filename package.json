@@ -4,7 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dialog": "node ./src/1-dialog-generator.js",
+    "dataset": "node ./src/2-dataset-generator.js"
   },
   "author": "",
   "license": "ISC",
