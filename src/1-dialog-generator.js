@@ -8,7 +8,7 @@ const openai = new OpenAI();
 const dialoguesFile = './dialogues_json/dialogues.json'
 
 // sets the origin of context business file txt. 
-const contextFile = 'business_context/context.txt';
+const contextFile = './business_context/context_example12.txt';
 
 /************************************************* */
 
@@ -58,11 +58,11 @@ async function dialogGenerator(prompt) {
 async function main() {
     // If context file does not exists will be required to continue.
     try {
-        if (fs.accessSync(contextFile)) {
-            let prompt = ` ${fs.readFileSync(contextFile, 'utf8')}
+        fs.accessSync(contextFile, fs.constants.F_OK);
+        const prompt = ` ${fs.readFileSync(contextFile, 'utf8')}
         
             Responde solo con código JSON válido, sin errores de sintaxis.
-            Basado en los datos anteriores genera un dataset de 2 preguntas y respuestas simulando una conversación entre un prospecto y un vendedor para entrenar un modelo de openai. Cada ejemplo que incluyas deberá tener el siguiente formato: 
+            Basado en los datos anteriores genera un dataset de preguntas y respuestas simulando una conversación entre un prospecto y un vendedor para entrenar un modelo de openai. Cada ejemplo que incluyas deberá tener el siguiente formato: 
             [
                 {"role": "user", "content": "[pregunta]"}, 
                 {"role": "assistant", "content": "[respuesta]"},
@@ -70,10 +70,10 @@ async function main() {
                 {"role": "assistant", "content": "[respuesta]"}
             ]
             `;
-            dialogGenerator(prompt);
-        }
+        dialogGenerator(prompt);
+
     } catch (e) {
         console.log(`[*] Please privide a txt file with your business information at ${contextFile}`);
-    }    
+    }
 }
 main();

@@ -1,0 +1,81 @@
+[
+    {
+        "role": "user",
+        "content": "¿Cuáles son los tipos de resina que se aprenderán en el curso?"
+    },
+    {
+        "role": "assistant",
+        "content": "En el curso aprenderás sobre varios tipos de resina utilizados en proyectos de encapsulación, como la resina epoxi y la resina de poliéster."
+    },
+    {
+        "role": "user",
+        "content": "¿Qué consejos de seguridad se darán al usar la resina?"
+    },
+    {
+        "role": "assistant",
+        "content": "Durante el curso recibirás consejos de seguridad importantes cuando se trabaja con resina, como el uso de gafas de seguridad, guantes y trabajar en un área bien ventilada."
+    },
+    {
+        "role": "user",
+        "content": "¿Cómo se escoge la resina y el catalizador adecuados?"
+    },
+    {
+        "role": "assistant",
+        "content": "Aprenderás a seleccionar la resina y el catalizador adecuados según tu ubicación geográfica y los proyectos que desees realizar."
+    },
+    {
+        "role": "user",
+        "content": "¿Se enseñará cómo evitar y eliminar las burbujas en la resina?"
+    },
+    {
+        "role": "assistant",
+        "content": "Sí, en el curso aprenderás técnicas para evitar y eliminar las burbujas en la resina, logrando un acabado más profesional."
+    },
+    {
+        "role": "user",
+        "content": "¿Cuáles son los errores comunes de coloración y cómo se evitarán?"
+    },
+    {
+        "role": "assistant",
+        "content": "Se discutirán errores comunes de coloración en la resina, como el amarilleo o aclarado con el tiempo, y se aprenderán técnicas para evitar estos problemas."
+    },
+    {
+        "role": "user",
+        "content": "¿El curso enseña cómo desmoldar, pulir y lijar la resina correctamente?"
+    },
+    {
+        "role": "assistant",
+        "content": "Sí, aprenderás la técnica adecuada para desmoldar tus proyectos sin dañar la resina, así como técnicas de pulido y lijado para lograr acabados suaves y brillantes."
+    },
+    {
+        "role": "user",
+        "content": "¿Se enseñará cómo tratar los materiales antes de encapsularlos, como las flores?"
+    },
+    {
+        "role": "assistant",
+        "content": "Sí, aprenderás cómo tratar adecuadamente los materiales antes de encapsularlos, como las flores, para preservar su belleza y evitar daños."
+    },
+    { "role": "user", "content": "¿Hay algún bono incluido en el curso?" },
+    {
+        "role": "assistant",
+        "content": "Sí, al inscribirte en el curso recibirás varios bonos, como cursos adicionales sobre la creación de fundas para celular, lámparas personalizadas y técnicas de pulido, así como acompañamiento en redes sociales y un certificado de participación."
+    },
+    { "role": "user", "content": "¿Cuáles son los métodos de pago aceptados?" },
+    {
+        "role": "assistant",
+        "content": "Los métodos de pago aceptados incluyen tarjeta de débito y crédito, pagos en efectivo a través de servicios como Efecty y OXXO, y plataformas de pago como Paypal y Mercado Pago."
+    },
+    { "role": "user", "content": "¿Existe alguna garantía de satisfacción?" },
+    {
+        "role": "assistant",
+        "content": "Sí, el curso cuenta con una garantía de satisfacción de 7 días. Si no estás satisfecho con el contenido del curso, puedes solicitar la devolución del 100% de tu dinero."
+    },
+    {
+        "role": "user",
+        "content": "¿Dónde puedo realizar el pago e inscribirme en el curso?"
+    },
+    {
+        "role": "assistant",
+        "content": "Puedes realizar el pago e inscribirte en el curso ingresando en el siguiente enlace: [enlace de pago]"
+    }
+]

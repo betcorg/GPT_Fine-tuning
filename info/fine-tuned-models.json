@@ -1,0 +1,194 @@
+[
+    {
+        "id": "ft:gpt-3.5-turbo-0613:personal::82TW5T9v",
+        "object": "model",
+        "created": 1695600809,
+        "owned_by": "user-aefckn8paswthgqumo1bkzo1",
+        "permission": [
+            {
+                "id": "snapperm-8dK5nbBzMGXHO8ZWDvDl6WjX",
+                "object": "model_permission",
+                "created": 1695600809,
+                "allow_create_engine": true,
+                "allow_sampling": true,
+                "allow_logprobs": true,
+                "allow_search_indices": false,
+                "allow_view": true,
+                "allow_fine_tuning": true,
+                "organization": "org-M2pTg5uzF1oynSDBMQOBAK4v",
+                "group": null,
+                "is_blocking": false
+            }
+        ],
+        "root": "gpt-3.5-turbo-0613",
+        "parent": "gpt-3.5-turbo-0613"
+    },
+    {
+        "id": "ft:gpt-3.5-turbo-0613:personal::82Tl3npM",
+        "object": "model",
+        "created": 1695601737,
+        "owned_by": "user-aefckn8paswthgqumo1bkzo1",
+        "permission": [
+            {
+                "id": "snapperm-dT8J57Gj3dSIYGrgDJzyMTZ9",
+                "object": "model_permission",
+                "created": 1695601737,
+                "allow_create_engine": true,
+                "allow_sampling": true,
+                "allow_logprobs": true,
+                "allow_search_indices": false,
+                "allow_view": true,
+                "allow_fine_tuning": true,
+                "organization": "org-M2pTg5uzF1oynSDBMQOBAK4v",
+                "group": null,
+                "is_blocking": false
+            }
+        ],
+        "root": "gpt-3.5-turbo-0613",
+        "parent": "gpt-3.5-turbo-0613"
+    },
+    {
+        "id": "ft:gpt-3.5-turbo-0613:personal::82TY5n0W",
+        "object": "model",
+        "created": 1695600933,
+        "owned_by": "user-aefckn8paswthgqumo1bkzo1",
+        "permission": [
+            {
+                "id": "snapperm-5Uzle1kYdMyMtziPgSJM10Sw",
+                "object": "model_permission",
+                "created": 1695600933,
+                "allow_create_engine": true,
+                "allow_sampling": true,
+                "allow_logprobs": true,
+                "allow_search_indices": false,
+                "allow_view": true,
+                "allow_fine_tuning": true,
+                "organization": "org-M2pTg5uzF1oynSDBMQOBAK4v",
+                "group": null,
+                "is_blocking": false
+            }
+        ],
+        "root": "gpt-3.5-turbo-0613",
+        "parent": "gpt-3.5-turbo-0613"
+    },
+    {
+        "id": "ft:gpt-3.5-turbo-0613:personal::82WCnOAR",
+        "object": "model",
+        "created": 1695611145,
+        "owned_by": "user-aefckn8paswthgqumo1bkzo1",
+        "permission": [
+            {
+                "id": "snapperm-ZAiToyQJA7ywFbq5vrkXwehz",
+                "object": "model_permission",
+                "created": 1695611145,
+                "allow_create_engine": true,
+                "allow_sampling": true,
+                "allow_logprobs": true,
+                "allow_search_indices": false,
+                "allow_view": true,
+                "allow_fine_tuning": true,
+                "organization": "org-M2pTg5uzF1oynSDBMQOBAK4v",
+                "group": null,
+                "is_blocking": false
+            }
+        ],
+        "root": "gpt-3.5-turbo-0613",
+        "parent": "gpt-3.5-turbo-0613"
+    },
+    {
+        "id": "ft:gpt-3.5-turbo-0613:personal::82UYSXuJ",
+        "object": "model",
+        "created": 1695604800,
+        "owned_by": "user-aefckn8paswthgqumo1bkzo1",
+        "permission": [
+            {
+                "id": "snapperm-16hL1ilaAFvUrLfS0H3JAd7F",
+                "object": "model_permission",
+                "created": 1695604800,
+                "allow_create_engine": true,
+                "allow_sampling": true,
+                "allow_logprobs": true,
+                "allow_search_indices": false,
+                "allow_view": true,
+                "allow_fine_tuning": true,
+                "organization": "org-M2pTg5uzF1oynSDBMQOBAK4v",
+                "group": null,
+                "is_blocking": false
+            }
+        ],
+        "root": "gpt-3.5-turbo-0613",
+        "parent": "gpt-3.5-turbo-0613"
+    },
+    {
+        "id": "ft:gpt-3.5-turbo-0613:personal::83cvaLMm",
+        "object": "model",
+        "created": 1695875314,
+        "owned_by": "user-aefckn8paswthgqumo1bkzo1",
+        "permission": [
+            {
+                "id": "snapperm-1LwK5OrpfPfvPXQrpx6BFjOX",
+                "object": "model_permission",
+                "created": 1695875314,
+                "allow_create_engine": true,
+                "allow_sampling": true,
+                "allow_logprobs": true,
+                "allow_search_indices": false,
+                "allow_view": true,
+                "allow_fine_tuning": true,
+                "organization": "org-M2pTg5uzF1oynSDBMQOBAK4v",
+                "group": null,
+                "is_blocking": false
+            }
+        ],
+        "root": "gpt-3.5-turbo-0613",
+        "parent": "gpt-3.5-turbo-0613"
+    },
+    {
+        "id": "ft:gpt-3.5-turbo-0613:personal::83eLMWQU",
+        "object": "model",
+        "created": 1695880756,
+        "owned_by": "user-aefckn8paswthgqumo1bkzo1",
+        "permission": [
+            {
+                "id": "snapperm-P5JR8ewo0lHbsTvFMok6XocU",
+                "object": "model_permission",
+                "created": 1695880756,
+                "allow_create_engine": true,
+                "allow_sampling": true,
+                "allow_logprobs": true,
+                "allow_search_indices": false,
+                "allow_view": true,
+                "allow_fine_tuning": true,
+                "organization": "org-M2pTg5uzF1oynSDBMQOBAK4v",
+                "group": null,
+                "is_blocking": false
+            }
+        ],
+        "root": "gpt-3.5-turbo-0613",
+        "parent": "ft:gpt-3.5-turbo-0613:personal::82TVdo4E"
+    },
+    {
+        "id": "ft:gpt-3.5-turbo-0613:personal::83eLfxhO",
+        "object": "model",
+        "created": 1695880775,
+        "owned_by": "user-aefckn8paswthgqumo1bkzo1",
+        "permission": [
+            {
+                "id": "snapperm-8mwQmGMWM4EHD9uqasHSAbHq",
+                "object": "model_permission",
+                "created": 1695880775,
+                "allow_create_engine": true,
+                "allow_sampling": true,
+                "allow_logprobs": true,
+                "allow_search_indices": false,
+                "allow_view": true,
+                "allow_fine_tuning": true,
+                "organization": "org-M2pTg5uzF1oynSDBMQOBAK4v",
+                "group": null,
+                "is_blocking": false
+            }
+        ],
+        "root": "gpt-3.5-turbo-0613",
+        "parent": "ft:gpt-3.5-turbo-0613:personal::82TVdo4E"
+    }
+]

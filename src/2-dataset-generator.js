@@ -1,10 +1,10 @@
 import fs from 'fs';
 
 // Sets the origin data file for generating formatted JSONL file.
-const dialoguesFile = './dialogues_json/dialogues.json'
+const dialoguesFile = './dialogues_json/resina.json'
 
 // Sets the path where JSONL file will be created.
-const trainingData = './training_data/training_data.jsonl'
+const trainingData = './training_dataset/training_data.jsonl'
 
 // Sets the system content instruction.
 const systemContent = 'Eres un vendedor carismático, experto en cierres de ventas';
@@ -14,8 +14,8 @@ const systemContent = 'Eres un vendedor carismático, experto en cierres de vent
 // Filters stresses and special characters from spanish.
 function normalizer(text) {
     return text
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '');
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
 }
 
 // Reads the JSON file and generates a JSONL file storing formatted examples.
@@ -45,13 +45,13 @@ function datasetGenerator() {
 function main() {
     // If dilaogues file does not exists then will be required.
     try {
-        if (fs.accessSync(dialoguesFile)) {
-            datasetGenerator();
-        }
+        fs.accessSync(dialoguesFile, fs.constants.F_OK)
+        datasetGenerator();
     } catch (e) {
         console.log(`[*] Please privide a JSON file with some examples of training data ${dialoguesFile}`);
-    }    
+    }
 }
+
 main();
 
 
